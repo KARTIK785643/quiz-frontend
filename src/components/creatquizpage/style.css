@@ -1,0 +1,197 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Main Container */
+.main-container {
+  text-align: center;
+  padding: 30px 15px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Quiz Form Container */
+.quiz-form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+h2 {
+  color: #216869;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: #216869;
+}
+
+/* File Inputs */
+input[type="file"] {
+  padding: 5px;
+  border: none;
+  background: none;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+  color: #333;
+}
+
+/* Option Fields */
+.option-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.option-container input[type="text"] {
+  flex-grow: 1;
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  margin-right: 24px;
+  background: #216869;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #1a5d5d;
+  transform: scale(1.05);
+}
+
+/* Created Quizzes Section */
+.created-quizzes {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #216869;
+}
+
+/* Quiz List */
+.quiz-list {
+  list-style: none;
+  padding: 0;
+}
+
+.quiz-item {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Quiz Thumbnail */
+.quiz-thumbnail img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Audio Preview */
+.audio-preview audio {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Generate Link Button */
+.generate-link-btn {
+  background: #28a745;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.generate-link-btn:hover {
+  background: #218838;
+}
+
+/* Quiz Link Input */
+.link-input {
+  width: calc(100% - 40px);
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Copy Button */
+.copy-btn {
+  background: #007bff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.copy-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-form-container {
+    padding: 20px;
+  }
+
+  .option-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .quiz-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quiz-thumbnail img {
+    max-width: 80px;
+  }
+}

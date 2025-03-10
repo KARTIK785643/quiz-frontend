@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../styles/white-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+
+#root, .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ensure content takes full space and pushes footer down */
+.content {
+    flex-grow: 1;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #216869;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Ensures it sticks to the bottom */
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #35e4c7, #7adede);
+    color: rgb(36, 111, 102);
+    background-image: url("../styles/white-background.jpg");
+    padding: 100px 20px;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 10px auto;
+    color: #0f493e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.start-quiz-btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+   
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.start-quiz-btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    background: white;
+    text-align: center;
+    height:50%;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4a90e2;
+}
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 40px; /* Ensures space before footer */
+}
+
+.feature-box {
+    background: #b3dae8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-box h3 {
+    color: #9013fe;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
