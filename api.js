@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // Backend API URL
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://quiz-backend-1-5i3k.onrender.com';
 
 // Create an axios instance with the base URL
 const api = axios.create({
